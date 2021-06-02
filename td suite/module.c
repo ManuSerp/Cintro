@@ -29,3 +29,14 @@ int sumTab(int t[],int d[],int n){
 
     return 0;
 }
+
+int prt(void){
+    char texte[100];
+
+    scanf("%s",texte);
+
+    printf("%s\n",texte);
+    return 0;
+
+
+}
