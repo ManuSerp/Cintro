@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 #include "module.h"
-#include "printtableau.h"
 
 int main() {
-    prt();
+    char s[] = "yoy";
+
+    printf("%d\n", palin(s));
 
     return 0;
 }

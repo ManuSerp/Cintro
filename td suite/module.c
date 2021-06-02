@@ -34,3 +34,49 @@ int prt(void) {
     printf("%s\n", texte);
     return 0;
 }
+
+int mylen(char s[]) {
+    int res = 0;
+    while (s[res]) {
+        res++;
+    }
+    return res;
+}
+
+int equals(char s[], char t[]) {
+    int param = 0;
+
+    int res = 0;
+    int test = 0;
+
+    int flag = 1;
+
+    while (flag) {
+        if (s[res] == 0 & t[res] == 0) {
+            flag = 0;
+
+        } else if (s[res] == 0 | t[res] == 0) {
+            flag = 0;
+            test = -1;
+
+        } else if (s[res] != t[res]) {
+            test = 1;
+        }
+
+        res++;
+    }
+
+    return test;
+}
+
+int palin(char s[]) {
+    int n = mylen(s);
+    char t[n];
+
+    for (int i = n - 1; i > -1; i--) {
+        t[i] = s[n - 1 - i];
+    }
+    t[n] = 0;
+
+    return equals(s, t);
+}
