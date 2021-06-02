@@ -1,0 +1,1 @@
+int printTableau(int t[],int n);
