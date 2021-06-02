@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include "printtableau.h"
+
 #include "module.h"
+#include "printtableau.h"
 
-int main()
-{
-
+int main() {
     prt();
 
     return 0;
