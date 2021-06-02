@@ -2,10 +2,10 @@
 #include "printtableau.h"
 #include "module.h"
 
-int main(){
+int main()
+{
 
     prt();
-    
-    return 0;
 
+    return 0;
 }
