@@ -1,11 +1,12 @@
+
 #include <stdio.h>
 
 #include "module.h"
 
 int main() {
-    char s[] = "yoy";
+    int A = 3;
 
-    printf("%d\n", palin(s));
+    printf("%d\n", bit(A));
 
     return 0;
 }

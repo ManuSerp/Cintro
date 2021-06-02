@@ -80,3 +80,30 @@ int palin(char s[]) {
 
     return equals(s, t);
 }
+
+int bit(int bin) {
+    int res = 0;
+    int test;
+
+    for (int i = 0; i < 64; i++) {
+        test = po(2, i);
+
+        if (bin & test) {
+            res++;
+        }
+    }
+    return res;
+}
+
+int po(int a, int b) {
+    int res;
+    if (b == 0) {
+        res = 1;
+    } else {
+        res = a;
+        for (int i = 0; i < b - 1; i++) {
+            res = res * a;
+        }
+    }
+    return res;
+}
