@@ -11,7 +11,7 @@ int main(){
             t++;
         }
     }
-
+    printTableau(tab,51);
     return 0;
 
 }
