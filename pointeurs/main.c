@@ -3,10 +3,8 @@
 #include "module.h"
 
 int main(void) {
-    char* s = copy("deme");
+    int* L = VoidList();
+    prtList(L);
 
-    ModU(s);
-
-    printf("%s\n", s);
     return 0;
 }

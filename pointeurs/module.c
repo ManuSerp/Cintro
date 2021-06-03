@@ -16,11 +16,12 @@ int mylen(char* s) {
 char* copy(char s[]) {
     int n = mylenD(s);
 
-    char* z = malloc(n * sizeof(char));
+    char* z = malloc((n + 1) * sizeof(char));
 
     for (int i = 0; i < n; i++) {
         *(z + i) = s[i];
     }
+    *(z + n + 1) = 0;
 
     return z;
 }
@@ -50,4 +51,21 @@ void ModU(char* s) {
     char* res = malloc(sizeof(char));
     scanf("%c", res);
     *s = *res;
+}
+
+void prtList(int* L) {
+    int n = *L;
+    int* save = L;
+    L++;
+    for (int i = 0; i < n; i++) {
+        printf("%d ", *L);
+        L++;
+    }
+    L = save;
+}
+
+int* VoidList(void) {
+    int* res = (int*)malloc(sizeof(int));
+    *res = 0;
+    return res;
 }
