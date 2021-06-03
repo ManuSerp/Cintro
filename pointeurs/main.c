@@ -3,7 +3,7 @@
 #include "module.h"
 
 int main(void) {
-    char *s = "salut";
+    char s[] = "saldaut";
 
-    printf("%d\n", mylen(s));
+    printf("%s\n", copy(s));
 }
