@@ -3,8 +3,10 @@
 #include "module.h"
 
 int main(void) {
-    char* s = "deme";
+    char* s = copy("deme");
 
-    printf("%d\n", NbE(s));
+    ModU(s);
+
+    printf("%s\n", s);
     return 0;
 }

@@ -45,3 +45,9 @@ int NbE(char* s) {
 
     return res;
 }
+
+void ModU(char* s) {
+    char* res = malloc(sizeof(char));
+    scanf("%c", res);
+    *s = *res;
+}
