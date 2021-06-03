@@ -3,7 +3,8 @@
 #include "module.h"
 
 int main(void) {
-    char s[] = "saldaut";
+    char* s = "deme";
 
-    printf("%s\n", copy(s));
+    printf("%d\n", NbE(s));
+    return 0;
 }

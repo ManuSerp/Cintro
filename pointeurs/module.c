@@ -32,3 +32,16 @@ int mylenD(char s[]) {
     }
     return res;
 }
+
+int NbE(char* s) {
+    int res = 0;
+
+    while (*(s)) {
+        if (*s == 'e') {
+            res++;
+        }
+        s++;
+    }
+
+    return res;
+}
