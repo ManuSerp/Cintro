@@ -9,5 +9,6 @@ typedef struct _Point {
 
 void print_point(Point *q);
 Point *create_point(int a, int b);
+void move(Point *p, int dx, int dy);
 
 #endif

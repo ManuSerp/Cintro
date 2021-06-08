@@ -11,3 +11,8 @@ Point *create_point(int a, int b) {
     res->y = b;
     return res;
 }
+
+void move(Point *p, int dx, int dy) {
+    p->x = p->x + dx;
+    p->y = p->y + dy;
+}

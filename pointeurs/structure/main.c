@@ -8,5 +8,9 @@ int main() {
 
     print_point(p);
 
+    move(p, 1, 0);
+
+    print_point(p);
+
     return 0;
 }
