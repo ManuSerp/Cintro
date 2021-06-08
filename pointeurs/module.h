@@ -9,3 +9,4 @@ void ModU(char* s);
 
 int* VoidList(void);
 void prtList(int* L);
+int* AddEnd(int a, int* s);

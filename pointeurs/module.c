@@ -55,6 +55,7 @@ void ModU(char* s) {
 
 void prtList(int* L) {
     int n = *L;
+    printf("%d\n", n);
     int* save = L;
     L++;
     for (int i = 0; i < n; i++) {
@@ -67,5 +68,20 @@ void prtList(int* L) {
 int* VoidList(void) {
     int* res = (int*)malloc(sizeof(int));
     *res = 0;
+    return res;
+}
+
+int* AddEnd(int a, int* s) {
+    int n = *s;
+    n++;
+    int* res = (int*)malloc((n) * sizeof(int));
+    (*s)++;
+    *res = *s;
+
+    for (int i = 1; i < n; i++) {
+        *(res + i) = *(s + i);
+    }
+    *(res + n) = a;
+
     return res;
 }
