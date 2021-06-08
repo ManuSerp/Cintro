@@ -7,4 +7,7 @@ typedef struct _Point {
 
 } Point;
 
+void print_point(Point *q);
+Point *create_point(int a, int b);
+
 #endif
